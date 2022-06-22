@@ -22,4 +22,9 @@ contract faucet {
     function getbalance() public view returns (uint256) {
         return address(this).balance;
     }
+
+    function deposit() public payable {
+        // do nothing here
+        // only select wallet account from remix left side and change the value then call this function
+    }
 }
