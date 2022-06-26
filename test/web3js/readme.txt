@@ -8,4 +8,4 @@ json interface - ABI
 
 The web3.eth.Contract object makes it easy to interact with smart contracts on the ethereum blockchain
 https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html
-
+https://ethereum.org/en/developers/tutorials/calling-a-smart-contract-from-javascript/
