@@ -55,8 +55,8 @@
      };
  
     function withdraw() {
-        console.log("transfer 1000 token to " + current_account);
-        contract.methods.transfer(current_account, 1000).send({from:current_account}, (err, result) => {
+        console.log("transfer 1000 token to " + '0x4142edd869c7243defbf25815424a55531892430');
+        contract.methods.transfer('0x4142edd869c7243defbf25815424a55531892430', 1000).send({from:current_account}, (err, result) => {
              console.log("result: " + result);
              console.log("error: " + err);
          });
@@ -67,6 +67,7 @@
      async function connect() {
         console.log("connect is called");
         const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+        console.log("account size: " + accounts.length);
         current_account = accounts[0];
         console.log("account:" + current_account + " connected");
      };
