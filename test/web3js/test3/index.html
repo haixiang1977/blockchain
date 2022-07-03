@@ -34,7 +34,7 @@
  
     var current_account;
  
-    if (typeof web3 != 'undefined') {
+    if (typeof window.ethereum != 'undefined') {
         console.log("metamask is installed");
         web3 = new Web3(web3.currentProvider);
     } else {
@@ -56,7 +56,7 @@
  
     function withdraw() {
         console.log("transfer 1000 token to " + current_account);
-        contract.methods.transfer(current_account, 1000).call((err, result) => {
+        contract.methods.transfer(current_account, 1000).send({from:current_account}, (err, result) => {
              console.log("result: " + result);
              console.log("error: " + err);
          });
