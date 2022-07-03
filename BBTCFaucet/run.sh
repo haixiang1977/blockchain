@@ -1,0 +1,2 @@
+DEBUG=bbtcfaucet:* npm start
+
