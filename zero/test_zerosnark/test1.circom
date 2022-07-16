@@ -6,6 +6,9 @@
 // install circom and snarkjs
 //    sudo npm install circom
 //    sudo npm install snarkjs
+// build
+//    circom test1.circom --r1cs --wasm --sym
+//    generate test1.r1cs  test1.sym  test1.wasm
 
 template Multiplier() {
     signal private input a;
